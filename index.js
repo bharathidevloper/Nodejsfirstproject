@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use('/api', login_route);
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
 
     res.send("Web service is running");
 })
