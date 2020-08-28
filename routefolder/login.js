@@ -11,6 +11,15 @@ router.post('/login', (req, res) => {
     }
 
 })
+router.get('/userdetails/:id', (req, res) => {
+    console.log(req.params.id);
+    let user = {
+        "username": "bharathi",
+        "lastname": "nagulapati"
+
+    }
+    res.send(user);
+})
 
 module.exports = router;
 
