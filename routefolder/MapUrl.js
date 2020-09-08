@@ -3,10 +3,12 @@ const Map = express.Router();
 
 Map.get('/Maplatlng', (req, res) => {
     let latlng = [
-        { latitude: 16.004875, longitude: 79.759841 },
-
-        { latitude: 16.005937, longitude: 79.752696 },
-
+{ "id": 22, "title": "Moving" },
+        { "id": 4, "title": "Stopped" },
+        { "id": 3, "title": "Idle" },
+        { "id": 2, "title": "No Gps" },
+        { "id": 0, "title": "Not Polled" },
+        { "id": 1, "title": "All" }
     ];
     res.send(latlng);
 });
